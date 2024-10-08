@@ -1,0 +1,24 @@
+.menu-wrapper{
+    width:100%;
+    height:100%;
+    padding: 9vh 1rem 0 1rem;
+    transition: all .35s cubic-bezier(0.53, 0, 0.24, 1.01);
+}
+
+.menu-wrapper--open{
+    transform: translateX(0);
+    background-color: #222222;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.61)
+}
+.menu-wrapper--closed{
+    transform: translateX(-101%);
+    background-color: #22222200;
+
+}
+.menu-list{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    width:100%;
+}

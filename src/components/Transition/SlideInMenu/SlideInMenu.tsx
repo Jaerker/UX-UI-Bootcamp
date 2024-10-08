@@ -2,7 +2,7 @@ import MenuItem from './MenuItem/MenuItem';
 import './slide-in-menu.css';
 type Props = {
     isOpen: boolean,
-    setCurrentPage: (pageName: string) => void,
+    setCurrentPage: (pageIndex: number) => void,
 }
 const SlideInMenu = ({isOpen, setCurrentPage}: Props) => {
     return (
@@ -10,41 +10,44 @@ const SlideInMenu = ({isOpen, setCurrentPage}: Props) => {
             <ol className='menu-list'>
                 <MenuItem 
                     content='Home'
-                    onClick={() => setCurrentPage('home')}
+                    onClick={() => setCurrentPage(0)}
                     />
                 <MenuItem 
                     content='Hovering Button'
-                    onClick={() => setCurrentPage('hover')}
+                    onClick={() => setCurrentPage(1)}
                     />
                 <MenuItem 
                     content='"Slide in" menu'
-                    onClick={() => setCurrentPage('hover')}
+                    onClick={() => setCurrentPage(2)}
                     />
                 <MenuItem 
-                    content='"Slide in" menu'
-                    onClick={() => setCurrentPage('hover')}
+                    content='"Rainbow cards'
+                    onClick={() => setCurrentPage(3)}
                     />
                 <MenuItem 
-                    content='"Slide in" menu'
-                    onClick={() => setCurrentPage('hover')}
+                    content='Four Corners'
+                    onClick={() => setCurrentPage(4)}
                     />
                 <MenuItem 
-                    content='"Slide in" menu'
-                    onClick={() => setCurrentPage('hover')}
+                    content='Spinner'
+                    onClick={() => setCurrentPage(5)}
                     />
                 <MenuItem 
-                    content='"Slide in" menu'
-                    onClick={() => setCurrentPage('hover')}
+                    content='Stopwatch'
+                    onClick={() => setCurrentPage(6)}
                     />
                 <MenuItem 
-                    content='"Slide in" menu'
-                    onClick={() => setCurrentPage('hover')}
+                    content='Starwars crawler'
+                    onClick={() => setCurrentPage(7)}
                     />
                 <MenuItem 
-                    content='"Slide in" menu'
-                    onClick={() => setCurrentPage('hover')}
+                    content='Flip A Card'
+                    onClick={() => setCurrentPage(8)}
                     />
-                                
+                <MenuItem 
+                    content='The Cube'
+                    onClick={() => setCurrentPage(9)}
+                    />          
             </ol>
         </section>
     );

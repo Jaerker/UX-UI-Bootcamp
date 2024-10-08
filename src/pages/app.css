@@ -5,3 +5,35 @@
     height:100vh;
 }
 
+.main-section{
+    display:grid;
+    padding-top:10vh;
+    justify-content: center;    
+    transition: opacity .3s ease-in-out;
+}
+
+.main-section--visible{
+    opacity:1;
+}
+
+.main-section--invisible{
+    opacity:0;
+    pointer-events: none;
+}
+
+.title{
+    text-align:center;
+
+    font-size: 3rem;
+}
+.content{
+    text-align:center;
+    width: 50vw;
+    padding: 2rem 2rem 0 2rem;
+    min-width: 400px;
+}
+
+.content p{
+    font-size:1.3em;
+    padding:.5rem 0;
+}

@@ -1,0 +1,99 @@
+.rainbow-cards{
+    display:grid;
+    margin-top:10vh;
+    justify-items:center;
+}
+.card{
+    position:absolute;
+    width:20vw;
+    height:30vw;
+    transform-origin: bottom center;
+    transition: transform .2s ease-in-out, box-shadow .3s ease-in-out;
+}
+.card:nth-child(9){
+    background-color: #f3b4d3;
+    box-shadow: 0px 0px 5px #00000067;
+}
+.card:nth-child(8){
+    background-color: #c776f6;
+}
+.card:nth-child(7){
+    background-color: #6b74fd;
+}
+.card:nth-child(6){
+    background-color: #5deafc;
+}
+.card:nth-child(5){
+    background-color: #36cd86
+}
+.card:nth-child(4){
+    background-color: #55fe3f
+}
+.card:nth-child(3){
+    background-color: #f9fa30
+}
+.card:nth-child(2){
+    background-color: #ff9317
+}
+.card:nth-child(1){
+    background-color: #ff0708
+}
+.rainbow-cards:hover .card{
+    box-shadow: 0px 0px 5px #00000067;
+}
+.rainbow-cards:hover .card:nth-child(1){
+    transform: translateX(20%) rotateZ(40deg) scale(1.05);
+}
+.rainbow-cards:hover .card:nth-child(2){
+    transform: translateX(15%) rotateZ(30deg) scale(1.05);
+}
+.rainbow-cards:hover .card:nth-child(3){
+    transform: translateX(10%) rotateZ(20deg) scale(1.05);
+}
+.rainbow-cards:hover .card:nth-child(4){
+    transform: translateX(5%) rotateZ(10deg) scale(1.05);
+}
+.rainbow-cards:hover .card:nth-child(5){
+    transform: translateX(0%) rotateZ(0deg) scale(1.05);
+}
+.rainbow-cards:hover .card:nth-child(6){
+    transform: translateX(-5%) rotateZ(-10deg) scale(1.05);
+}
+.rainbow-cards:hover .card:nth-child(7){
+    transform: translateX(-10%) rotateZ(-20deg) scale(1.05);
+}
+.rainbow-cards:hover .card:nth-child(8){
+    transform: translateX(-15%) rotateZ(-30deg) scale(1.05);
+}
+.rainbow-cards:hover .card:nth-child(9){
+    transform: translateX(-20%) rotateZ(-40deg) scale(1.05);
+}
+
+
+.rainbow-cards:hover .card:nth-child(1):hover{
+    transform: translateX(20%) rotateZ(40deg) scale(1.1);
+}
+.rainbow-cards:hover .card:nth-child(2):hover{
+    transform: translateX(15%) rotateZ(30deg) scale(1.1);
+}
+.rainbow-cards:hover .card:nth-child(3):hover{
+    transform: translateX(10%) rotateZ(20deg) scale(1.1);
+}
+.rainbow-cards:hover .card:nth-child(4):hover{
+    transform: translateX(5%) rotateZ(10deg) scale(1.1);
+}
+.rainbow-cards:hover .card:nth-child(5):hover{
+    transform: translateX(0%) rotateZ(0deg) scale(1.1);
+}
+.rainbow-cards:hover .card:nth-child(6):hover{
+    transform: translateX(-5%) rotateZ(-10deg) scale(1.1);
+}
+.rainbow-cards:hover .card:nth-child(7):hover{
+    transform: translateX(-10%) rotateZ(-20deg) scale(1.1);
+}
+.rainbow-cards:hover .card:nth-child(8):hover{
+    transform: translateX(-15%) rotateZ(-30deg) scale(1.1);
+}
+.rainbow-cards:hover .card:nth-child(9):hover{
+    transform: translateX(-20%) rotateZ(-40deg) scale(1.1);
+}

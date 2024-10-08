@@ -1,8 +1,13 @@
+import FourCorners from "../../components/Animation/FourCorners/FourCorners";
+
 const FourCornersPage = () => {
     return (
-        <div>
-            FourCornersPage
-        </div>
+        <>
+         <h1 className="title">Four Corners</h1>
+         <section className="content">
+            <FourCorners />
+            </section>   
+        </>
     );
 }
 

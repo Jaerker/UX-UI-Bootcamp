@@ -1,7 +1,13 @@
+import Spinner from "../../components/Animation/Spinner/Spinner";
+
 const SpinnerPage = () => {
     return (
         <div>
-            SpinnerPage
+            
+            <h1 className="title">Spinner</h1>
+            <section className="content">
+                <Spinner />
+            </section>
         </div>
     );
 }

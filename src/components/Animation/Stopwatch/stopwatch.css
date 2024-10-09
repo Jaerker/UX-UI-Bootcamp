@@ -1,0 +1,110 @@
+.stopwatch__wrapper{
+
+}
+
+.stopwatch-clock{
+    position:relative;
+    display:grid;
+    place-items:center;
+    width: 50vw;
+    height:50vw;
+    max-width:500px;
+    max-height:500px;
+    background-color: white;
+    border-radius:50%;
+    border: solid 5px silver;
+    box-shadow: inset 0px 0px 10px rgb(146, 146, 146);
+}
+
+.stopwatch-clock__seconds{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 21vw;
+    max-width:215px;
+    height:4px;
+    border-radius:4px;
+    transform: rotatez(-90deg);
+    background-color: maroon;
+    transform-origin: left center;
+}
+
+
+.stopwatch-clock__minutes{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 22vw;
+    max-width:225px;
+    min-height:6px;
+    border-radius:6px;
+    transform: rotatez(-90deg);
+    background-color: gray;
+    transform-origin: left center;
+}
+
+.stopwatch-clock__minutes-animation{
+    animation: clock-movement 60s infinite linear;
+}
+
+.stopwatch-clock__seconds-animation{
+    animation: clock-movement 1s infinite linear;
+}
+
+.stopwatch-clock__seconds--play,
+.stopwatch-clock__minutes--play{
+    animation-play-state: running;
+    -o-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -webkit-animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+.stopwatch-clock__seconds--pause,
+.stopwatch-clock__minutes--pause{
+    animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+
+@keyframes clock-movement{
+    0%{
+        transform: rotatez(-90deg);
+    }
+    100%{
+        transform: rotatez(270deg);
+    }
+    
+}
+
+
+.stopwatch-digital{
+
+}
+
+.stopwatch-digital__numbers{
+
+}
+
+.stopwatch-digital__minutes{
+
+}
+
+.stopwatch-buttons{
+
+}
+
+.stopwatch-buttons__start{
+
+}
+
+.stopwatch-buttons__stop{
+
+}
+
+.stopwatch-buttons__restart{
+
+}
+

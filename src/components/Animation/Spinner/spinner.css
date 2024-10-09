@@ -1,0 +1,120 @@
+:root{
+    --pulse: 1.1;
+}
+
+.spinner_wrapper{
+    width:500px;
+    height:500px;
+    display:grid;
+    place-items: center;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 5px 5px 20px black;
+    border-radius: 5px;
+}
+.spinner{
+    width:12rem;
+    height:2rem;
+    background-color: rgb(14, 156, 118);
+    border-radius:2rem;
+    border: solid 1px white;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+
+}
+.spinner_rotation-part{
+    animation-name: spinner;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+
+}
+@keyframes pulse{
+    0%{
+        transform:scale(1);        
+        box-shadow: 0px 0px 10px white;
+    }
+    1%{
+        transform:scale(var(--pulse));
+        box-shadow: 0px 0px 20px white;
+    }
+    15%{
+        transform:scale(1);        
+        background-color: rgb(7, 103, 163);
+        box-shadow: 0px 0px 10px white;
+
+    }
+    20%{
+        transform:scale(1);
+        box-shadow: 0px 0px 10px white;
+    }
+    21%{
+        transform:scale(var(--pulse));        
+        box-shadow: 0px 0px 20px white;
+    }
+    35%{
+        transform:scale(1);
+        background-color: rgb(163, 28, 7);
+        box-shadow: 0px 0px 10px white;
+
+    }
+    40%{
+        transform:scale(1);
+        box-shadow: 0px 0px 10px white;
+    }
+    41%{
+        transform:scale(var(--pulse));
+        box-shadow: 0px 0px 20px white;
+    }
+    55%{
+        transform:scale(1);
+        background-color: rgb(163, 7, 140);
+        box-shadow: 0px 0px 10px white;
+    }
+    60%{
+        transform:scale(1);
+        box-shadow: 0px 0px 10px white;
+    }
+    61%{
+        transform:scale(var(--pulse));
+        box-shadow: 0px 0px 20px white;
+    }
+    75%{
+        transform:scale(1);
+        background-color: rgb(153, 163, 7);
+        box-shadow: 0px 0px 10px white;
+    }
+    80%{
+        transform:scale(1);
+        box-shadow: 0px 0px 10px white;
+    }
+    81%{
+        transform:scale(var(--pulse));
+        box-shadow: 0px 0px 20px white;
+    }
+    95%{
+        transform:scale(1);
+        background-color: rgb(14, 156, 118);
+        box-shadow: 0px 0px 10px white;
+    }
+    100%{
+        box-shadow: 0px 0px 10px white;
+    }
+
+}
+@keyframes spinner{
+    0%
+    {
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+
+}

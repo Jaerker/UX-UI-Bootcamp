@@ -1,8 +1,13 @@
+import Stopwatch from "../../components/Animation/Stopwatch/Stopwatch";
+
 const StopwatchPage = () => {
     return (
-        <div>
-            StopwatchPage
-        </div>
+        <>
+          <h1 className="title">Stopwatch</h1>
+          <section className="content">
+            <Stopwatch/>
+            </section>  
+        </>
     );
 }
 
